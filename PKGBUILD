@@ -9,8 +9,11 @@ license=('MIT')
 depends=(
   "git"
 )
-source=("https://github.com/quorumcontrol/$pkgname/releases/download/${pkgver//_/-}/$pkgname-Linux-$arch.tar.gz")
-sha256sums=('c57d1416c8841d6cf198f375da57962e5c0ece81d087d1e6a537e67ae98d8ad9')
+makedepends=(
+  "go"
+)
+source=("https://github.com/quorumcontrol/$pkgname/archive/${pkgver//_/-}.tar.gz")
+sha256sums=("59558367e31a92f4b9fb77d2f9570c241fda3d8b1f1a8b5133b1c376b24d4587")
 
 package() {
   cd "$srcdir/"
