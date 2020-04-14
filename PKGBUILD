@@ -1,6 +1,6 @@
 # Maintainer:  <dev@quorumcontrol.com>
 pkgname=dgit
-pkgver="v0.0.15_alpha"
+pkgver="v0.0.15-alpha"
 pkgrel=1
 pkgdesc="Decentralized git remotes"
 arch=('x86_64')
@@ -12,7 +12,7 @@ depends=(
 makedepends=(
   "go"
 )
-source=("${pkgname}-${pkgver}.tar.gz::https://github.com/quorumcontrol/$pkgname/archive/${pkgver//_/-}.tar.gz")
+source=("${pkgname}-${pkgver}.tar.gz::https://github.com/quorumcontrol/$pkgname/archive/$pkgver.tar.gz")
 sha256sums=("59558367e31a92f4b9fb77d2f9570c241fda3d8b1f1a8b5133b1c376b24d4587")
 
 build() {
