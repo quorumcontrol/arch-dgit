@@ -20,12 +20,12 @@ build() {
   cd "$srcdir/$pkgname-$pkgver"
   EXTRA_GOFLAGS="-modcacherw -gcflags all=-trimpath=${PWD} -asmflags all=-trimpath=${PWD}" \
     LDFLAGS="-linkmode external -extldflags \"${LDFLAGS}\"" \
-    make VERSION=$pkgver DESTDIR="$pkgdir" PREFIX="/usr" build
+    make VERSION="$pkgver" DESTDIR="$pkgdir" PREFIX="/usr" build
 }
 
 package() {
   cd "$srcdir/$pkgname-$pkgver"
-  make VERSION=$pkgver DESTDIR="$pkgdir" PREFIX=/usr install
+  make VERSION="$pkgver" DESTDIR="$pkgdir" PREFIX="/usr" install
 }
 
 # vim:set ts=2 sw=2 et:
