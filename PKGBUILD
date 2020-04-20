@@ -1,12 +1,12 @@
 # Maintainer:  <dev@quorumcontrol.com>
-pkgname=dgit
+pkgname=git-dg
 pkgver="v0.0.15_alpha"
 pkgrel=1
 pkgdesc="Decentralized git remotes"
 arch=('x86_64')
 url="https://dgit.dev"
 license=('MIT')
-provides=('dgit')
+provides=('git-dg')
 depends=(
   "git"
 )
