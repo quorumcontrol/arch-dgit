@@ -6,6 +6,7 @@ pkgdesc="Decentralized git remotes"
 arch=('x86_64')
 url="https://dgit.dev"
 license=('MIT')
+provides=('dgit')
 depends=(
   "git"
 )
