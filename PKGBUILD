@@ -1,5 +1,5 @@
 # Maintainer:  <dev@quorumcontrol.com>
-pkgname=git-dg
+pkgname="decentragit"
 pkgver="v0.0.15_alpha"
 pkgrel=1
 pkgdesc="Decentralized git remotes"
